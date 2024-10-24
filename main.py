@@ -8,8 +8,14 @@ def main():
     for letter in line.lower():
       if letter.isalpha():
         charDict[letter] += 1
+
+  print("--- Beginning report of books/frankenstein.txt ---")
+  print(f"{totalWords} words found in the document\n")
+
   for letterCount in charDict:
     print(f"The '{letterCount}' character was found {charDict[letterCount]} times")
+
+  print("--- End of report ---")
 
 def generateCharDict():
   charDict = {}
